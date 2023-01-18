@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
+    <title>Profile</title>
+</head>
+<body>
+    <nav class="navBar">
+        <div class="formEditer">
+            <input type="text" class="Name" placeholder="Name">
+            <input type="number" class="BuyCost" placeholder="Buy cost">
+            <input type="number" class="SalePrice" placeholder="Sale Price">
+            <button class="addButton btn btn-success">Add new Product</button>
+            <input type="number" class="Id" placeholder="Code Product" />
+            <button class="editButton btn btn-warning">Update</button>
+            <button class="deleteButton btn btn-danger">Delete Product</button>
+        </div>
+        <button class="logOut btn btn-light">LogOut</button>
+    </nav>
+    <div class="inputValidate text-center">You must complete all fields</div>
+    <div class="table-container">
+        <table class="display" id="table">
+            <thead>
+                <tr>
+                    <th>Code Product</th>
+                    <th>Name</th>
+                    <th>Buy Cost</th>
+                    <th>Sale Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+@Scripts.Render("~/bundles/profileScript")
+</html>
+

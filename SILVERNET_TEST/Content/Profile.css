@@ -1,0 +1,59 @@
+﻿.navBar{
+    background-color: white;
+    position: absolute;
+    top:0;
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom:500px;
+}
+
+.logOut{
+    position: absolute;
+    right:0;
+    height: 100%;
+}
+
+
+.formEditer input {
+    border: none;
+    outline: none;
+    background-color: #CDCDCD;
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    color: gray;
+    margin-left: 20px;
+}
+
+.table-container {
+    background-color: white;
+    position: relative;
+    margin-top: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+.inputValidate {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 25px;
+    width: 250px;
+    height: 30px;
+    background-color: #DDABB0;
+    color: #842029;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.inputValidate.show{
+    visibility:visible;
+}

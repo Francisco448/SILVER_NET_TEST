@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SILVERNET_TEST", "SILVERNET_TEST\SILVERNET_TEST.csproj", "{50DA9BB1-F0B4-407E-8954-B105EFC863FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_API", "REST_API\REST_API.csproj", "{8CD31D46-3A45-49A2-8AD4-22F5CEE8B4C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50DA9BB1-F0B4-407E-8954-B105EFC863FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50DA9BB1-F0B4-407E-8954-B105EFC863FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50DA9BB1-F0B4-407E-8954-B105EFC863FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50DA9BB1-F0B4-407E-8954-B105EFC863FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD31D46-3A45-49A2-8AD4-22F5CEE8B4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD31D46-3A45-49A2-8AD4-22F5CEE8B4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD31D46-3A45-49A2-8AD4-22F5CEE8B4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD31D46-3A45-49A2-8AD4-22F5CEE8B4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B1D283C-CC60-4DB5-A324-508EFDAAC99C}
+	EndGlobalSection
+EndGlobal

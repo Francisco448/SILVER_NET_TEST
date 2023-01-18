@@ -1,0 +1,10 @@
+Para levantar la api: 
+-Crear una base de datos en SQL SERVER Llamada SILVERDB.
+-Abrir el proyecto en visual studio.
+-Ejecutar en la consola de administrador de paquetes el comando Update-Database.
+-Por ultimo levantar la solucion REST_API.
+
+A tener en cuenta:
+-El datatable esta hecho en jquery datatable, el objetivo es que funcione como un visor de datos, la funcion de filtro y el ordenamiento por nombre funcionan bien,
+ las otras funciones quedan en segundo plano.
+-El campo de busqueda del datatable filtra por nombre de producto.

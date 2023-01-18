@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Sign Up";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css");
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="registerForm">
+        <div class="container">
+            <div class="title">
+                <a class="glyphicon glyphicon-chevron-left" href="@Url.Action("Index", "account")"></a>
+                <h3 class="center-block">Sign Up</h3>
+            </div>
+            <div class="row">
+                <input type="text" name="FirstName" class="FirstName" placeholder="FirstName">
+                <input type="text" name="LastName" class="LastName" placeholder="LastName">
+            </div>
+            <div class="row">
+                <input type="text" name="UidSerie" class="UidSerie" placeholder="Dni">
+                <input type="text" name="Email" class="Email" placeholder="Email">
+            </div>
+            <div class="row">
+                <input type="date" name="BirthDate" class="BirthDate">
+                <select class="Gender" name="Gender">
+                    <option value="Seleccione su identidad de genero">Seleccione su identidad de genero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="No binario">No binario</option>
+                </select>
+            </div>
+            <div class="row">
+                <input type="password" name="Password" class="passwordRegister" placeholder="Password">
+                <input type="password" class="passwordConfirm" placeholder="Confirm Password">
+            </div>
+            <button class="registerButton center-block">Register</button>
+        </div>
+    </div>
+    <div class="unValidInputs text-center">You have fill in all fields</div>
+    <div class="userCreated text-center">The user is already created</div>
+    <div class="unMatchPasswords text-center">Passwords do not match</div>
+
+</body>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/accountScript")
+</html>
+

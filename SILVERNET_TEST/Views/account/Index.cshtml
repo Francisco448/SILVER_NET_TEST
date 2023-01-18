@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Sign In";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css");
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="loginForm">
+        <div class="container">
+            <h3>Sign In</h3>
+            <div class="row" id="section">
+                <input type="text" class="userNameLogin center-block" placeholder="UserName">
+                <input type="password" class="passwordLogin center-block" placeholder="Password">
+                <button class="buttonLogin center-block">Enter!</button>
+            </div>
+            <div class="row" id="footer">
+                <a href="@Url.Action("Register", "account")">You haven´t an account?</a>
+            </div>
+        </div>
+    </div>
+    <div class="notExist text-center">The user not exist, please Sign Up</div>
+    <div class="invalidPassword text-center">The password is invalid</div>
+    <div class="inputsEmpty text-center">Please, complete the inputs with your credentials</div>
+</body>
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/accountScript")
+</html>
+
+
